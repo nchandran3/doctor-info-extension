@@ -1,0 +1,48 @@
+.healthcare-professional {
+    cursor: pointer;
+    border-bottom: 1px dashed #007bff;
+    color: #007bff;
+}
+
+.healthcare-professional:hover {
+    background-color: #f8f9fa;
+}
+
+#doctor-info-tooltip {
+    position: fixed;
+    z-index: 10000;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+#doctor-info-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    transform: rotate(45deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

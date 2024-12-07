@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Professionals Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .hospital-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Center Staff Directory</h1>
+
+    <div class="hospital-section">
+        <h2>Cardiology Department</h2>
+        <p>Department Head: Dr. Sarah Johnson</p>
+        <p>Senior Cardiologist: Dr. Michael Chen</p>
+        <ul>
+            <li>Dr. Robert Smith - Interventional Cardiology</li>
+            <li>Dr. Emily Williams - Electrophysiology</li>
+        </ul>
+        <p>Nurse Practitioner: Jane Doe, NP</p>
+    </div>
+
+    <div class="hospital-section">
+        <h2>Neurology Department</h2>
+        <p>Department Head: Dr. David Thompson</p>
+        <ul>
+            <li>Dr. Maria Rodriguez - Neurological Surgery</li>
+            <li>Dr. James Wilson - Stroke Specialist</li>
+        </ul>
+        <p>Senior RN: Mary Johnson, RN</p>
+    </div>
+
+    <div class="hospital-section">
+        <h2>Emergency Medicine</h2>
+        <p>ER Director: Dr. Lisa Anderson</p>
+        <ul>
+            <li>Dr. Thomas Brown - Trauma Surgery</li>
+            <li>Dr. Patricia Lee - Emergency Medicine</li>
+        </ul>
+        <p>Emergency NP: John Smith, NP</p>
+        <p>Lead RN: Susan Miller, RN</p>
+    </div>
+
+    <!-- Dynamic content test -->
+    <div class="hospital-section">
+        <h2>New Appointments</h2>
+        <p id="new-appointments">Loading...</p>
+    </div>
+
+    <script>
+        // Simulate dynamic content loading
+        setTimeout(() => {
+            const newAppointments = document.getElementById('new-appointments');
+            newAppointments.innerHTML = 'Recently joined: Dr. Rachel Green - Pediatrics<br>New NP: William Turner, NP';
+        }, 2000);
+    </script>
+</body>
+</html>
